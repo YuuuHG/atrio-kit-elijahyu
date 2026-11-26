@@ -1,0 +1,4 @@
+# USB 硬盘盒插入时立即触发自动挂载（EXT4 主库盘 / NTFS 盘）
+# 精确匹配分区 UUID，避免其他 USB 设备误触发
+ACTION=="add", SUBSYSTEM=="block", ENV{ID_FS_UUID}=="9db48d8a-e499-4f8c-b5f1-6ace15a82c18", TAG+="systemd", ENV{SYSTEMD_WANTS}+="ensure-mounts.service"
+ACTION=="add", SUBSYSTEM=="block", ENV{ID_FS_UUID}=="C333F18677910F8A", TAG+="systemd", ENV{SYSTEMD_WANTS}+="ensure-mounts.service"
