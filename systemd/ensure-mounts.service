@@ -1,0 +1,10 @@
+[Unit]
+Description=Ensure USB HDD mounts (EXT4/NTFS/thumbs) are online
+After=local-fs.target docker.service
+Wants=local-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/automount/ensure-mounts.sh
+Nice=10
+IOSchedulingClass=idle
