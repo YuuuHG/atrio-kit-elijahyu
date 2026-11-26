@@ -1,0 +1,13 @@
+[Unit]
+Description=Stock Widget Backend (Eastmoney via local proxy)
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /opt/stock-widget/server.py
+Restart=always
+RestartSec=5
+Environment=STOCK_PROXY=http://127.0.0.1:7890
+
+[Install]
+WantedBy=multi-user.target
