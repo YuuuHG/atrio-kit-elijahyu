@@ -1,0 +1,11 @@
+[Unit]
+Description=Run ensure-mounts every 2 minutes
+
+[Timer]
+OnBootSec=60sec
+OnUnitActiveSec=120sec
+AccuracySec=15sec
+Persistent=true
+
+[Install]
+WantedBy=timers.target
