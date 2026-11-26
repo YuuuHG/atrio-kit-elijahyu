@@ -1,0 +1,17 @@
+atrio-kit
+Copyright 2026 YuuuHG
+
+This product includes configuration and customization scripts built on top of
+Atrio and CasaOS, both licensed under the Apache License, Version 2.0.
+
+  - Atrio    : https://github.com/peppeaiello/atrio        (Apache-2.0)
+  - CasaOS   : https://github.com/IceWhaleTech/CasaOS      (Apache-2.0)
+  - CasaOS-UI: https://github.com/IceWhaleTech/CasaOS-UI   (Apache-2.0, upstream of Atrio)
+
+CasaOS is a trademark of IceWhale Technology. This project is not affiliated
+with, endorsed by, or sponsored by IceWhale Technology or the Atrio authors.
+No CasaOS / IceWhale trademarks may be used to promote derivative works.
+
+Third-party runtime dependencies used by the stock widget (fetched at runtime,
+not bundled): Tencent Finance quote/kline/smartbox APIs. stock data copyright
+belongs to the respective exchanges and data providers.
